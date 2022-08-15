@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous"></script>
+    <head>
+        <title>Blog</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <div class="main-header">
+                <h3 class="header-info">Cobee The Coder</h3>
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="#project">Project</a>
+                    <a href="#contacts">Contacts</a>
+                    <a href="#about-us">About Us</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="jumbotron">
+                <div class="jumbotron">
+                    <h1 class="jumbotron-title">Get Programming Tips here!</h1>
+                    <div class="header-flex">
+                        <div>
+                            <h2 class="jumbotron-text">Are you a newcomer in Programming? <br> Learn through <span style="color: #f4a261;">Simple </span> Game and Website!</h2>
+                            <div class="mini-text-flex">
+                                <p class="mini-text">Learn basic programming here</p>
+                                <button id="icon-up" onclick="changeText()">
+                                    <i class="far fa-hand-point-up"></i>
+                                </button>
+                                <button id="icon-down" class="icon-down">
+                                    <i class="far fa-hand-point-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="jumbotron-img" src="images/img-header.png" alt="" width="auto" height="300" onmouseover="changeImage(this)" onmouseout="changeImageBack(this)">
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <aside>
+                        <div>
+                            <h3 class="aside-title">It's Cobee</h3>
+                            <img class="pfp" src="images/cobee.png" alt="Cobee pfp" width="150px" height="auto">
+                            <div class="toggle">
+                                <button class="btn" id="green">
+                                    <i class="fa fa-thumbs-up fa-lg"></i>
+                                </button>
+                                <button class="btn" id="red">
+                                    <i class="fa fa-thumbs-down fa-lg"></i>
+                                </button>
+                            </div>
+                            <button onclick="dayMode()">Day</button>
+                            <button onclick="nightMode()">Night</button>
+                        </div>
+                    </aside>
+                </div>
+                <div class="content">
+                    <article id="video">
+                        <div class="item-video">
+                            <h3 class="article-title">What is Coding?</h3>
+                            <iframe width="500" height="350" src="https://www.youtube.com/embed/XMZFUnAgOqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h3 class="article-title">Coding is Not Difficult!</h3>
+                            <iframe width="500" height="350" src="https://www.youtube.com/embed/hb7Q33ysCwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </article>
+                    <article id="maps">
+                        <div class="maps">
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.286986589089!2d121.05305580454468!3d14.582716021128487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9576673ec31%3A0x96c2ad76a2cbecc1!2sSM%20Megamall%20-%20Building%20B!5e0!3m2!1sen!2sph!4v1659600138425!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="main-footer">
+                <h3 class="info-top">Cian The Junior Programmer</h3>
+                <div class="social-media">
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <p class="info-center">Copyright &copy; 2022. Cian. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
