@@ -1,3 +1,24 @@
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+     right: 0;
+    height: 60px;
+    background-color: rgb(38, 70, 83);
+}
+.header-info{
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    padding: 0;
+    margin: 14px 30px 0px;
+    color: rgb(244, 162, 97);
+}
+.header-icon{
+    width: 40px;
+    margin: 8px 15px;
+    position: absolute;
+}
 main{
     margin-top: 60px;
 }
