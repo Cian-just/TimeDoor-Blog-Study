@@ -21,7 +21,7 @@
         <main>
             <section id="jumbotron">
                 <div class="jumbotron">
-                    <h1 class="jumbotron-title">Get Programming Tips here!</h1>
+                    <h1 class="jumbotron-title" onmouseover="changeTitle(this)" onmouseout="changeTitleBack(this)">Get Programming Tips here!</h1>
                     <div class="header-flex">
                         <div>
                             <h2 class="jumbotron-text">Are you a newcomer in Programming? <br> Learn through <span style="color: #f4a261;">Simple </span> Game and Website!</h2>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="main-content">
                     <aside>
-                        <div>
+                        <div class="profile">
                             <h3 class="aside-title">It's Cobee</h3>
                             <img class="pfp" src="images/cobee.png" alt="Cobee pfp" width="150px" height="auto">
                             <div class="toggle">
@@ -55,6 +55,17 @@
                             </div>
                             <button onclick="dayMode()">Day</button>
                             <button onclick="nightMode()">Night</button>
+                        </div>
+                        <div class="search-tags-container">
+                            <div class="input-tag">
+                                <h3 class="aside-title"> Search Here</h3>
+                                <input id="myInput" type="text" placeholder="Search...">
+                                <span class="addBtn" onclick="newElement()">Search</span>
+                            </div>
+                            <ul id="myUL"class="search-tags-list">
+                                <li class="search-tags-item">HTML</li>
+                                <li class="search-tags-item">Code</li>
+                            </ul>
                         </div>
                     </aside>
                 </div>
@@ -102,6 +113,6 @@
                 <p class="info-center">Copyright &copy; 2022. Cian. All rights reserved.</p>
             </div>
         </footer>
-        <script src="index.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

@@ -30,13 +30,56 @@ function dislikeColor(){
     }
     this.classList.toggle("red")
 }
+function changeTitle(element){
+    element.innerHTML = "Create Simple Game And Website"
+}
+function changeTitleBack(element) {
+    element.innerHTML = "Get Programming Tips Here!";
+}
 function changeImage(element){
     document.getElementsByClassName("jumbotron-img");
-    replaceText[0].innerHTML = "Create Simple Game and Website";
-    element.setAttribute("src", "images/img-header2.pngimages/img-header2.png")
+    element.setAttribute("src", "images/img-header2.png")
 }
 function changeImageBack(element){
     document.getElementsByClassName("jumbotron-img");
-    replaceText[0].innerHTML = "Get Programming Tips Here";
     element.setAttribute("src", "images/img-header.png")
+}
+
+var myList = document.getElementsByTagName("li");
+var i;
+for (i=0; i<myList.length; i++){
+    var span = document.createElement("span")
+    span.innerHTML = "x"
+    myList[i].appendChild(span).setAttribute("class", "close");
+}
+
+var close = document.getElementsByClassName("close");
+var i;
+for(i=0; i<close.length; i++){
+    close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.display = "none"
+    }
+}
+
+function newElement(){
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput").value;
+    if(inputValue == `` || inputValue == ` `){
+        alert("Data cannot be empty!")
+    }else{
+        document.getElementById("myUL").appendChild(li).setAttribute("class", "search-tags-item");
+    }
+
+    document.getElementById("myInput").value = "";
+
+    var span = document.createElement("SPAN");
+    span.innerHTML = "x";
+    li.appendChild(span).setAttribute("class", "close");
+    for(i=0; i<close.length; i++){
+        close[i].onclick = function(){
+            var div = this.parentElement;
+            div.style.display = "none"
+        }
+    }
 }

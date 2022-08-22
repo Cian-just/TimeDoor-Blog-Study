@@ -201,3 +201,48 @@ footer{
     color: #e76f51;
     font-weight: bold;
 }
+ul, li{
+    position: relative;
+}
+input{
+    width: 70%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(38, 70, 83);
+    height: 40px;
+    margin: 0;
+    padding: 5px;
+}
+.addBtn{
+    width: 30%;
+    padding: 6px;
+    background-color: rgb(38, 70, 83);
+    margin: 0;
+    cursor: pointer;
+    color: snow;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+.search-tags-list{
+    list-style: none;
+    margin: 30px 0;
+    padding: 0;
+}
+.search-tags-item {
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(38, 70, 83);
+    color: snow;
+    text-align: left;
+}
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 5px;
+    color: tomato;
+    font-family: 'Fredoka One', cursive;
+    cursor: pointer;
+    font-size: 20px;
+}
